@@ -8,4 +8,4 @@ This copy starts from the file tree of https://github.com/UW-PREFIRE/PREFIRE_sim
 
 The `from . import hsremis` line is removed from `utils/__init__.py`. Code that needs it can still write `from PREFIRE_sim_tools.utils import hsremis` (and then needs the data file). Nothing else in this repository, PREFIRE_ATM, PREFIRE_AUX_MET, PREFIRE_PRD_GEN or PREFIRE_tools refers to `utils.hsremis`. No results change.
 
-Who asked for it: our own change, made at the lead's request on 2026-10-27. We found the failure in our own tests of 2B-ATM and AUX-MET. The registration wizard reported it for the 2B-ATM bundle, where it proposed supplying the file as an input instead. It did not report it for AUX-MET.
+Who asked for it: our own change, made at the lead's request on 2026-10-27. We found the failure in our own tests of 2B-ATM and AUX-MET. The registration wizard parked its 2B-ATM bundle draft over the missing file but proposed no code fix, and its AUX-MET analysis did not report it.
